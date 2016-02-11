@@ -1,0 +1,114 @@
+\documentclass[11pt]{article}
+\usepackage{mathspec}
+\setallmainfonts[Mapping=tex-text]{Linux Libertine O}
+\usepackage{xltxtra}
+\usepackage{tikz}
+\usepackage[paperwidth=22cm,paperheight=17cm,hmargin=1 cm,vmargin=1 cm]{geometry}
+\usetikzlibrary{positioning}
+\usetikzlibrary{fit}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.symbols}
+\usetikzlibrary{calc}
+%\usetikzlibrary{arrows.meta}
+
+
+\begin{document}
+	
+
+\pagestyle{empty}
+\begin{center}
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}[baseline, every node/.style={minimum width=3cm, minimum height=2cm}]
+
+\node at (0,0) [draw, rounded corners=20, inner sep=\baselineskip] (understanding) {Understanding};
+
+\node [align=center, rounded corners=20, below right=.5\baselineskip and 8em of understanding.east, draw, inner xsep=\baselineskip, inner ysep=\baselineskip] (knowledge) {Knowledge\\(general, contex-\\tual, etc.)};
+
+\node [right=24em of understanding, align=center, rounded corners=20, draw, inner sep=\baselineskip] (commintentions) {Communicative\\Intentions};
+
+\node [below=4\baselineskip of commintentions, ellipse, inner sep=.5\baselineskip, draw] (generation) {Generation};
+
+\node [align=center, right=4em of generation, signal, signal to=east and west, signal from=nowhere, draw, inner ysep=\baselineskip] (output) {Output\\(speech, writing)};
+
+\node [below=4\baselineskip of generation, align=center, inner sep=.5\baselineskip, draw] (productionstrat) {Production\\Strategies};
+
+\node [below=4\baselineskip of understanding, ellipse, inner sep=.5\baselineskip, draw] (comprehension) {Comprehension};
+
+\node [align=center, rounded corners=20, below = 4\baselineskip of knowledge, draw, inner xsep=\baselineskip, inner ysep=\baselineskip] (competenceprinc) {Competence\\(principles and\\parameters,\\lexicon, etc.)};
+
+\node [align=center, below=4\baselineskip of comprehension, inner ysep=.5\baselineskip, draw] (parsing) {Parsing\\Strategies};
+
+\node [align=center, left=4em of parsing, signal, signal to=east and west, signal from=nowhere, draw, inner ysep=\baselineskip] (input) {Input (speech, reading)};
+
+\node [align=center, below=4\baselineskip of parsing, ellipse, inner ysep=.5\baselineskip, draw] (gramjudg) {Grammaticality\\Judgment};
+
+\path let \p1 = (output), \p2 = (gramjudg) in node at (\x1,\y2) (grammaticaly) [align=center, signal, signal to=east and west, signal from=nowhere, draw, inner ysep=\baselineskip] {Grammaticality\\Judgments, Corrections,\\Explanations, etc.};
+
+\node [below=4\baselineskip of gramjudg, align=center, draw, rounded corners=20] (analyzed) {Analyzed\\Linguistic\\Knowledge};
+
+\node [below left=2\baselineskip and 4em of gramjudg, align=center, draw] (metalinguistic) {Metalinguistic\\Strategies};
+
+\node [below right=2\baselineskip and 4em of gramjudg, align=center, draw] (nonlinguistic) {Nonlinguistic\\Control\\Strategies};
+
+
+\node [below right=\baselineskip and 8em of nonlinguistic, inner ysep=\baselineskip, draw, align=center] (key) {\textsc{Key}\\\\\begin{tabular}{l@{~}c@{~}l@{\hspace{2cm}}l@{~}c@{~}l}
+	\tikz[baseline] \draw (0,0) ellipse [y radius=10pt, x radius=15pt]; & = & computation/processing & \tikz[baseline, rounded corners=5] \draw rectangle (1,.5);& = & declarative information\\
+	\tikz \node at (0,0) [draw, signal, signal to=east and west, signal from=nowhere, minimum size=.5cm] {}; & = & observable phenomena & \tikz[baseline] \draw rectangle (1,.5); & = & procedural information \\
+	\tikz[baseline, -Triangle] \draw (0,0) -- (1,0); & = & processing flow & \tikz[baseline, -Triangle, dashed] \draw (0,0) -- (1,0);& = & effect on computation\\
+	\end{tabular}};
+
+%\node [below right=\baselineskip and 8em of nonlinguistic, inner ysep=\baselineskip, draw, align=center] (key) {\textsc{Key}\\\\\begin{tabular}{l@{~}c@{~}l@{\hspace{2cm}}l@{~}c@{~}l}
+%		\tikz[baseline] \draw (0,0) ellipse [y radius=10pt, x radius=15pt]; & = & computation/processing & \tikz[baseline, rounded corners=5] \draw rectangle (1,.5);& = & declarative information\\
+%		\tikz \node at (0,0) [draw, signal, signal to=east and west, signal from=nowhere, minimum size=.5cm] {}; & = & observable phenomena & \tikz[baseline] \draw rectangle (1,.5); & = & procedural information \\
+%		\tikz[baseline] \draw (0,0) -- (1,0); & = & processing flow & \tikz[baseline, dashed] \draw (0,0) -- (1,0);& = & effect on computation\\
+%\end{tabular}};
+
+
+\draw[-Triangle, thick] (comprehension) -- (understanding); \draw[-Triangle, thick] (understanding.east) -- (knowledge);
+\draw[-Triangle, thick] (knowledge) -- (commintentions.west);
+\draw[-Triangle, thick] (commintentions) -- (generation);
+\draw[-Triangle, thick, dashed] (knowledge) -- (gramjudg);
+\draw[-Triangle, thick, dashed] (knowledge) -- (comprehension);
+\draw[-Triangle, thick, dashed] (knowledge) -- (generation);
+\draw[-Triangle, thick] (generation) -- (output);
+\draw[-Triangle, thick, dashed] (competenceprinc) -- (comprehension);
+\draw[-Triangle, thick, dashed] (competenceprinc) -- (generation);
+\draw[-Triangle, thick, dashed] (competenceprinc) -- (gramjudg);
+\draw[-Triangle, thick, dashed] (productionstrat) -- (gramjudg);
+\draw[-Triangle, thick, dashed] (productionstrat) -- (generation);
+\draw[-Triangle, thick, dashed] (parsing) -- (comprehension);
+\draw[-Triangle, thick, dashed] (parsing) -- (gramjudg);
+\draw[-Triangle, thick] (input) -- (comprehension.west);
+\draw[-Triangle, thick] (input) -- (gramjudg.west);
+\draw[-Triangle, thick, dashed] (analyzed) -- (gramjudg);
+\draw[-Triangle, thick, dashed] (nonlinguistic.north) -- (gramjudg);
+\draw[-Triangle, thick, dashed] (metalinguistic.north) -- (gramjudg);
+\draw[-Triangle, thick] (gramjudg) -- (grammaticaly);
+%
+%\draw[thick] (comprehension) -- (understanding); \draw[thick] (understanding.east) -- (knowledge);
+%\draw[thick] (knowledge) -- (commintentions.west);
+%\draw[thick] (commintentions) -- (generation);
+%\draw[thick, dashed] (knowledge) -- (gramjudg);
+%\draw[thick, dashed] (knowledge) -- (comprehension);
+%\draw[thick, dashed] (knowledge) -- (generation);
+%\draw[thick] (generation) -- (output);
+%\draw[thick, dashed] (competenceprinc) -- (comprehension);
+%\draw[thick, dashed] (competenceprinc) -- (generation);
+%\draw[thick, dashed] (competenceprinc) -- (gramjudg);
+%\draw[thick, dashed] (productionstrat) -- (gramjudg);
+%\draw[thick, dashed] (productionstrat) -- (generation);
+%\draw[thick, dashed] (parsing) -- (comprehension);
+%\draw[thick, dashed] (parsing) -- (gramjudg);
+%\draw[thick] (input) -- (comprehension.west);
+%\draw[thick] (input) -- (gramjudg.west);
+%\draw[thick, dashed] (analyzed) -- (gramjudg);
+%\draw[thick, dashed] (nonlinguistic.north) -- (gramjudg);
+%\draw[thick, dashed] (metalinguistic.north) -- (gramjudg);
+%\draw[thick] (gramjudg) -- (grammaticaly);
+
+
+\end{tikzpicture}
+}
+\end{center}
+
+\end{document}

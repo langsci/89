@@ -1,0 +1,35 @@
+%add all your local new commands to this file 
+
+
+% For Overleaf only!
+% \newcommand{\citegen}[1]{\citeauthor{#1}'s \citeyear{#1}}
+% \newcommand{\chapref}[1]{Chapter~\ref{#1}}
+
+\frenchspacing
+
+\renewcommand{\sectref}[1]{{Section}~\ref{#1}}
+\newcommand{\citegenp}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+
+% Thanks to Peter Grill on Stack Exchange
+\newcommand{\widearraycontent}{\text{What will the grandfather clock stand between the bed and?}}
+\newcommand{\widearray}[1]{\text{\makebox[\widthof{\widearraycontent}][l]{#1}}}
+
+% Changing the name of the bibliography to meet US standards
+% \renewcommand{\bibname}{References} %% the new version of the class file defines this to be `List of references', which I hope should be acceptable
+
+\newcommand{\schdash}{\ \textendash{}\ } % Variant as proposed by GSR
+% \newcommand{\schdash}{\textemdash{}} % Variant with unspaced emdash
+% \newcommand{\schdash}{\ \textemdash{}\ } % Spaced Em-Dash variant
+% \newcommand{\schdash}{\textendash{}} % Unspaced En-Dash variant
+
+\newcommand{\gobblecomma}[1]{\ignorespaces}
+\newcommand{\salso}[2]{\is{#1!zzzzzzzz@\gobblecomma|seealso{#2}}} % Thanks to Barbara Beeton
+
+\defbibheading{prefacebib}[References]{%
+	\section*{References}%
+	\markboth{Preface (2015)}{Preface (2015)}
+}
+
+% Chomsky citation comamnds
+\newcommand{\aspects}[1]{\textit{Aspects}: #1\nocite{Chomsky1965}}
+\newcommand{\aspectsq}{\textit{Aspects}\nocite{Chomsky1965}\xspace}
