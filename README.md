@@ -1,4 +1,4 @@
-# Thoughts on Grammaticalization
+# The Empirical Base of Linguistics
 
 ## Publication Info
 
