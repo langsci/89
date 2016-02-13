@@ -94,7 +94,7 @@
 		\hyperpage{48}, \hyperpage{50}, \hyperpage{63}, 
 		\hyperpage{66, 67}, \hyperpage{70, 71}, \infn {12}{72}, 
 		\hyperpage{73--75}, \hyperpage{113}, \hyperpage{115}, 
-		\hyperpage{126}, \hyperpage{130}, \infn {5}{130}, 
+		\hyperpage{125}, \hyperpage{130}, \infn {5}{130}, 
 		\hyperpage{137}, \hyperpage{152}, \infn {17}{194}, 
 		\infn {18}{194}, \hyperpage{195}, \infn {20}{195}, 
 		\hyperpage{206}, \infn {1}{206}
@@ -219,12 +219,12 @@
   \item Hindle, Donald, \hyperpage{62, 63}, \hyperpage{79}, 
 		\hyperpage{116}
   \item Hirsh-Pasek, Kathy, \hyperpage{90, 91}, \hyperpage{93}
-  \item Hirst, Graeme, \hyperpage{10}, \hyperpage{82, 83}, 
-		\hyperpage{85}, \hyperpage{133}, \hyperpage{145}, 
-		\hyperpage{168}, \hyperpage{177}, \hyperpage{185}, 
-		\hyperpage{188}, \hyperpage{191}
+  \item Hirst, Graeme, \hyperpage{10}, \hyperpage{82--85}, 
+		\hyperpage{133}, \hyperpage{145}, \hyperpage{168}, 
+		\hyperpage{177}, \hyperpage{185}, \hyperpage{188}, 
+		\hyperpage{191}
   \item Hockett, Charles~F., \hyperpage{63}
-  \item Hofmeister, Philip, \hyperpage{xii}
+  \item Hofmeister, Philip, \hyperpage{xii, xiii}
   \item Holcomb, Phillip~J., \hyperpage{61}
   \item Holmes, Virginia~M., \hyperpage{156}
   \item Hoppe, Ronald~A., \hyperpage{68}, \hyperpage{82}, 
@@ -372,11 +372,11 @@
   \indexspace
 
   \item Paikeday, Thomas~M., \hyperpage{24}, \hyperpage{48}
-  \item Pateman, Trevor, \hyperpage{51, 52}
+  \item Pateman, Trevor, \hyperpage{50}, \hyperpage{52}
   \item Penke, Martina, \hyperpage{xii}
   \item Pesetsky, David, \hyperpage{151}
   \item Philips, Susan~U., \hyperpage{111}
-  \item Phillips, Colin, \hyperpage{xii, xiii}
+  \item Phillips, Colin, \hyperpage{xiii}
   \item Piaget, Jean, \hyperpage{87}, \hyperpage{92}, \hyperpage{111}
   \item Pollack, Chava~R., \hyperpage{7}, \hyperpage{139--143}
   \item Pollock, Jean-Yves, \hyperpage{46}
@@ -391,7 +391,7 @@
 		\hyperpage{80}, \hyperpage{83}, \hyperpage{104, 105}, 
 		\hyperpage{130, 131}, \hyperpage{133}, \hyperpage{145}, 
 		\hyperpage{158}, \hyperpage{186}, \hyperpage{189, 190}, 
-		\hyperpage{193}
+		\hyperpage{192}
 
   \indexspace
 
@@ -414,12 +414,13 @@
   \item Rosen, Sara~Thomas, \hyperpage{10}
   \item Rosenbach, Anette, \hyperpage{xii}
   \item Ross, {John Robert}, \hyperpage{xix}, \hyperpage{63}, 
-		\hyperpage{65--67}, \hyperpage{69}, \hyperpage{103}, 
-		\infn {10}{104}, \infn {8}{104}, \hyperpage{105}, 
-		\infn {12}{105}, \hyperpage{109, 110}, \hyperpage{113}, 
-		\infn {18}{113}, \hyperpage{114}, \infn {20}{114}, 
-		\hyperpage{116}, \hyperpage{119}, \infn {1}{127}, 
-		\hyperpage{137}, \hyperpage{145}, \infn {20}{195}
+		\hyperpage{65--67}, \hyperpage{69}, 
+		\hyperpage{102, 103}, \infn {10}{104}, \infn {8}{104}, 
+		\hyperpage{105}, \infn {12}{105}, \hyperpage{109, 110}, 
+		\hyperpage{113}, \infn {18}{113}, \hyperpage{114}, 
+		\infn {20}{114}, \hyperpage{116}, \hyperpage{119}, 
+		\infn {1}{127}, \hyperpage{137}, \hyperpage{145}, 
+		\infn {20}{195}
   \item Rubin, Edgar, \hyperpage{14}
   \item Ryan, Ellen~Bouchard, \hyperpage{56}, \hyperpage{87}, 
 		\hyperpage{92, 93}, \hyperpage{111}, \hyperpage{118}, 
@@ -430,7 +431,7 @@
 
   \item Sachs, Jacqueline~Strunk, \hyperpage{85}
   \item Sag, Ivan, \hyperpage{62, 63}, \hyperpage{79}, \hyperpage{116}
-  \item Sag, Ivan~A., \hyperpage{xii}
+  \item Sag, Ivan~A., \hyperpage{xii, xiii}
   \item Saito, Mamoru, \hyperpage{38, 39}
   \item Sales, B.~Dennis, \hyperpage{22}
   \item Sampson, Geoffrey, \hyperpage{4}, \hyperpage{6}, \hyperpage{35}, 
@@ -466,7 +467,7 @@
 		\hyperpage{116, 117}, \hyperpage{119}, \hyperpage{133}, 
 		\hyperpage{135}, \hyperpage{152, 153}
   \item Sprouse, Jon, \hyperpage{xii, xiii}
-  \item Staum Casasanto, Laura, \hyperpage{xii}
+  \item Staum Casasanto, Laura, \hyperpage{xii, xiii}
   \item Steedman, Mark, \hyperpage{150, 151}
   \item Steegar, David~M., \hyperpage{129}
   \item Steele, Susan, \hyperpage{111}
@@ -477,7 +478,7 @@
   \item Svartvik, Jan, \hyperpage{58}, \hyperpage{67}, \hyperpage{83}, 
 		\hyperpage{104, 105}, \hyperpage{125}, \hyperpage{130}, 
 		\hyperpage{145}, \hyperpage{158}, \hyperpage{186}, 
-		\hyperpage{189}, \hyperpage{193}
+		\hyperpage{189}, \hyperpage{192}
   \item Swinney, David~A., \hyperpage{61}
 
   \indexspace
@@ -508,7 +509,7 @@
 
   \indexspace
 
-  \item Wagers, Matt, \hyperpage{xii, xiii}
+  \item Wagers, Matt, \hyperpage{xiii}
   \item Walker, Edward~Lewis, \hyperpage{135}
   \item Wang, William S-Y., \hyperpage{70}, \hyperpage{91}, 
 		\hyperpage{106}
