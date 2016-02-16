@@ -773,7 +773,7 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 
 \usepackage{pdfpages}
 \newcommand{\lsAdvertisement}{
-	\includepdf[pages={1}]{langsci/graphics/didyoulikethisbook.pdf}
+% 	\includepdf[pages={1}]{langsci/graphics/didyoulikethisbook.pdf}
 }
 
 \newcommand{\lsBackPage}{		% Back page
