@@ -3,7 +3,7 @@
 ## Publication Info
 
 - Author: Carson T. Schütze
-- Publication Date: not yet released.
+- Publication Date: 2016-02-23
 - Series: Classics
 - Volume: 2
 
